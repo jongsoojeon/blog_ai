@@ -1,4 +1,4 @@
-baseURL = "https://jongsoojeon.github.io/"
+baseURL = "https://jongsoojeon.github.io/blog_ai/"
 languageCode = "ko-KR"
 title = "개발 노트"
 theme = "PaperMod"
