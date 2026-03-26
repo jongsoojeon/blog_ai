@@ -1,0 +1,61 @@
+baseURL = "https://jongsoojeon.github.io/"
+languageCode = "ko-KR"
+title = "개발 노트"
+theme = "PaperMod"
+defaultContentLanguage = "ko"
+
+# 페이지 설정
+[pagination]
+  pagerSize = 10
+enableRobotsTXT = true
+
+[params]
+  author = "jongsoojeon"
+  description = "Python, Java, LLM 활용법 그리고 일상"
+  defaultTheme = "auto"       # 라이트/다크 자동 전환
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true  # 코드 복사 버튼
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true              # 목차 자동 생성
+  TocOpen = false
+
+  [params.homeInfoParams]
+    Title = "안녕하세요 👋"
+    Content = "개발 이야기, LLM 활용법, 그리고 일상을 기록합니다."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/jongsoojeon"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "글 목록"
+    url = "/posts/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "태그"
+    url = "/tags/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "about"
+    name = "소개"
+    url = "/about/"
+    weight = 3
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[markup]
+  [markup.highlight]
+    noClasses = false    # 코드 하이라이팅 활성화
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true      # HTML in Markdown 허용
